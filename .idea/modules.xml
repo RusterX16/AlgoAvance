@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/AlgoAvancé.iml" filepath="$PROJECT_DIR$/.idea/AlgoAvancé.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fractale/Fractale.iml" filepath="$PROJECT_DIR$/Fractale/Fractale.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TD-Init/TD-Init.iml" filepath="$PROJECT_DIR$/TD-Init/TD-Init.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TD-Listes-Arbres/TD-Listes-Arbres.iml" filepath="$PROJECT_DIR$/TD-Listes-Arbres/TD-Listes-Arbres.iml" />
+    </modules>
+  </component>
+</project>

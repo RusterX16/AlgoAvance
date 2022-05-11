@@ -108,7 +108,7 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
     }
 
     public void tree(double l, int n) {
-        int angle = 30;
+        int angle = 3 * (n == 0 ? 1 : n);
 
         if(n == 0) {
             forward(l);
@@ -128,6 +128,23 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         left(angle);
 
         backward(l);
+    }
+
+    public void trinity(double l, int n) {
+        switch(n) {
+            case 0 -> {
+                for(int i = 0; i < 3; i++) {
+                    forward(l);
+                    left(120);
+                }
+            }
+            default -> {
+                trinity(l, n - 1);
+                right(60);
+                backward(l);
+                trinity(l * 2, n - 1);
+            }
+        }
     }
 
     /**

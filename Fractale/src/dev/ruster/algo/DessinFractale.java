@@ -45,9 +45,10 @@ class DessinFractale {
         // d.reset();
         // d.close();
 
-        t.speed(100);
+        t.speed(1);
         t.setDirection(90);
-        // t.vonKoch(900, 5);
-        t.tree(100, 3);
+//         t.vonKoch(300, 4);
+        t.tree(100, 10);
+//        t.trinity(30, 10);
     }
 }

@@ -62,6 +62,14 @@ public class TD1 {
                         System.out.println(x + "^" + n + " = " + puiss(x, n));
                     }
                 }
+                case 5 -> {
+                    System.out.print("a : ");
+                    int a = scan.nextInt();
+                    System.out.print("b : ");
+                    int b = scan.nextInt();
+
+                    System.out.println("Le PGCD de " + a + " et " + b + " est " + pgcd(a, b));
+                }
                 default -> {
                     System.out.println("Merci au revoir");
                     over = true;
@@ -96,11 +104,20 @@ public class TD1 {
         return n + sommeImpairs(n - 1);
     }
 
+    @Contract(pure = true)
     public static int puiss(int x, int n) {
         if(n == 0) {
             return 1;
         }
         return x * puiss(x, n - 1);
+    }
+
+    @Contract(pure = true)
+    public static int pgcd(int a, int b) {
+        if(b - a < 0) {
+            return 1;
+        }
+        return pgcd(b - a, b);
     }
 
     public static void displayMainMenu() {
@@ -109,6 +126,7 @@ public class TD1 {
                     2 -> pair
                     3 -> somme impairs
                     4 -> puissance
+                    5 -> PGCD
                     0 ou autre -> sortir
                     """);
     }
